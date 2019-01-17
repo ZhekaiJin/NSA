@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.12.3",
     "d3-shotchart": "0.0.2",
+    "lodash": "^4.17.11",
     "nba": "^4.5.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
