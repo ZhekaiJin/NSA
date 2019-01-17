@@ -19,12 +19,12 @@ export class Main extends React.Component {
      .catch((e) => console.log(e))
  }
 
-  render() {
-    return (
-      <div className="main">
-        <Profile playerInfo={this.state.playerInfo} />
-        <ShotChart playerId={this.state.playerId} />
-      </div>
-    );
-  }
+ render() {
+   return (
+     <div className="main">
+       <Profile playerInfo={this.state.playerInfo} />
+       <ShotChart playerId={this.state.playerId} />
+     </div>
+   );
  }
+}
