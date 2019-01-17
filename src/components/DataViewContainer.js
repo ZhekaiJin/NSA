@@ -28,15 +28,15 @@ export class DataViewContainer extends React.Component {
     }
 
     render () {
-        const {chartType} = this.state;
+        const {chartType, minCount, displayToolTips} = this.state;
 
         return (
             <div className="data-view">
                 <ShotChart
                     playerId={this.props.playerId}
-                    minCount={2}
-                    displayToolTips={true}
-                    chartType="hexbin"
+                    minCount={minCount}
+                    displayToolTips={displayToolTips}
+                    chartType={chartType}
                 />
                 <CountSlider
                     onChange = {_.debounce(this.onMinCountChange, 500)}
